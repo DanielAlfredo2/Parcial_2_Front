@@ -1,0 +1,1119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    transition: all .5s ease-in-out;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.no-activar {
+    display: none !important;
+}
+
+.activar {
+    display: block !important;
+}
+
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: #e74c3c;
+    color: white;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url('imagenes/header.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 200px;
+    transition: 0.5s;
+}
+
+.header span {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 90px;
+}
+
+.login-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.actividades-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.actividad-carta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+    border-radius: 30px;
+    overflow: hidden;
+    color: #333;
+}
+
+.actividad-img {
+    width: auto;
+    height: 45vw;
+    background-size: cover;
+}
+
+.tarjeta-1 {
+    background-image: url(imagenes/Tcg-1.webp);
+}
+
+.tarjeta-2-5 {
+    background-image: url(imagenes/Tcg-2-5.webp);
+}
+
+.tarjeta-3 {
+    background-image: url(imagenes/Tcg-3.webp);
+    background-position: 50%;
+}
+
+.tarjeta-4-6 {
+    background-image: url(imagenes/Tcg-4-6.webp);
+}
+
+.side-1 {
+    background-image: url(imagenes/side-1.webp);
+    height: 80vh !important;
+    background-position: 50%;
+}
+
+.side-2 {
+    background-image: url(imagenes/side-2.webp);
+    height: 80vh !important;
+    background-position: 50%;
+}
+
+.actividad-icon {
+    position: absolute;
+    font-size: 2rem;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actividad-icon img {
+    width: 40px !important;
+    height: auto !important;
+}
+
+.tennis {
+    transform: scale(.8);
+}
+
+.running {
+    transform: scale(.8);
+    transform: translate(0, -3px);
+}
+
+.actividad-tiempo {
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    margin: 20px 0px 12px 0px;
+    width: fit-content;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.actividad-info {
+    padding: 0px 20px 0px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-long {
+    display: none;
+}
+
+.actividad-info-text {
+    padding-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.actividad-txt {
+    color: #666;
+    margin: 5px 0 0 0;
+    font-size: 5vw;
+}
+
+.tarjeta {
+    max-height: 100%;
+}
+
+.long-tarjeta {
+    height: 100%;
+}
+
+.actividad-button {
+    display: none;
+}
+
+.start {
+    display: flex;
+    background-color: red;
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+}
+
+.invite {
+    display: flex;
+    background-color: red;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+}
+
+.actividades-grid-activar {
+    display: flex !important;
+}
+
+.actividad-carta-activar {
+    min-height: fit-content;
+    height: calc(100dvh - 40px);
+}
+
+.actividad-img-activar {
+    width: 100% !important;
+    height: calc(50vh) !important;
+    background-position: 50%;
+}
+
+.actividad-info-activar {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    margin: 0 !important;
+    padding: 0px 20px !important;
+}
+
+.actividad-button-activar {
+    display: block !important;
+}
+
+.actividad-icon-activar {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.actividad-icon-activar img {
+    width: 60px !important;
+    height: auto !important;
+}
+
+.actividad-info-text-activar {
+    margin-top: 0px !important;
+    margin-bottom: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: start;
+}
+
+.actividad-txt-activar {
+    margin: 5px 0 0 0 !important;
+}
+
+.text-long-activar {
+    display: block;
+}
+
+.actividad-img-activar.side-1 {
+    background-position-y: 30%;
+}
+
+.actividad-img-activar.side-2 {
+    background-position-y: 30%;
+}
+
+.close-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(100, 100, 100, .4);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.close-button:hover {
+    background-color: rgba(200, 200, 200, .3);
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+}
+
+.close:hover {
+    fill: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1058px) {
+    .no-activar {
+        display: none !important;
+    }
+
+    .activar {
+        display: flex !important;
+    }
+
+    body {
+        font-family: 'Inter';
+        margin: 0;
+        padding: 0;
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        background-image: url('imagenes/header.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 90px;
+    }
+
+    .login-button {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        padding: 15px 25px;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .header h1 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 200px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        margin-top: 200px;
+        transition: 0.5s;
+    }
+
+    .header span {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200px;
+    }
+
+    .spotify-carta {
+        background: rgba(240, 240, 240, 0.5);
+        border-radius: 24px;
+        padding: 20px;
+        margin: 20px;
+        margin-top: 0px;
+        height: 193px;
+        min-width: 300px;
+        width: auto;
+        max-width: 500px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    }
+
+    .playing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+    }
+
+    .playing p {
+        font-weight: 700;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .spotify-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .flecha-box {
+        width: 35px;
+        height: 35px;
+        background: #ddd;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flecha {
+        transform: translate(1px, 0);
+        width: 30px;
+        height: 30px;
+    }
+
+    .spotify-content {
+        display: flex;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .player-container,
+    .album-cover,
+    .play-button{
+        width: 150px;
+        height: 150px;
+    }
+
+    .song-details {
+        display: flex;
+        flex-direction: column;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .song-details .album {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: black;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .song-details .artist {
+        margin: 8px 0 0;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #333;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .actividades-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .actividad-carta {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(217, 217, 217);
+        border-radius: 30px;
+        overflow: hidden;
+        color: #333;
+        grid-column: span 2;
+        grid-row: span 5;
+    }
+
+    .actividad-img {
+        height: 150px;
+        background-size: cover;
+    }
+
+    .tarjeta-1 {
+        background-image: url(imagenes/Tcg-1.webp);
+    }
+
+    .tarjeta-2-5 {
+        background-image: url(imagenes/Tcg-2-5.webp);
+    }
+
+    .tarjeta-3 {
+        background-image: url(imagenes/Tcg-3.webp);
+        background-position: 50%;
+    }
+
+    .tarjeta-4-6 {
+        background-image: url(imagenes/Tcg-4-6.webp);
+    }
+
+    .side-1 {
+        background-image: url(imagenes/side-1.webp);
+        height: 100% !important;
+    }
+
+    .side-2 {
+        background-image: url(imagenes/side-2.webp);
+        height: 100% !important;
+    }
+
+    .actividad-icon {
+        position: absolute;
+        font-size: 2rem;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(3px);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .actividad-icon img {
+        width: 50px !important;
+        height: auto !important;
+    }
+
+    .tennis {
+        transform: scale(.8);
+    }
+
+    .running {
+        transform: scale(.8);
+        transform: translate(0, -3px);
+    }
+
+    .actividad-tiempo {
+        background-color: yellow;
+        color: black;
+        padding: 5px 10px;
+        margin: 20px 20px 12px 20px;
+        width: fit-content;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.8vw;
+    }
+
+    .actividad-info-text {
+        padding: 0px 20px 20px 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .text-long {
+        display: none;
+    }
+
+    .actividad-txt {
+        color: #666;
+        margin: 5px 0 0 0;
+        font-size: 1.8vw;
+    }
+
+    .tarjeta {
+        max-height: 100%;
+    }
+
+    .wide-tarjeta {
+        grid-column: span 3;
+        grid-row: span 5;
+    }
+
+    .long-tarjeta {
+        grid-column: span 2;
+        grid-row: span 6;
+    }
+
+    .long-tarjeta img {
+        height: 100%;
+    }
+
+    .actividad-button {
+        display: none;
+    }
+
+    .start {
+        display: flex;
+        background-color: red;
+        margin: 20px auto;
+        margin-top: 50px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 100px;
+        width: fit-content;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .invite {
+        display: flex;
+        background-color: red;
+        margin: 20px auto;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 100px;
+        width: fit-content;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .actividades-grid-activar {
+        display: flex !important;
+    }
+
+    .actividad-carta-activar {
+        flex-direction: row-reverse !important;
+        min-height: fit-content;
+        height: calc(100vh - 80px);
+    }
+
+    .actividad-img-activar {
+        width: 60% !important;
+        height: auto !important;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+
+    .actividad-info-activar {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-grow: 1 !important;
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+
+    .actividad-button-activar {
+        display: block !important;
+    }
+
+    .actividad-icon-activar {
+        position: inherit !important;
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .actividad-icon-activar img {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .actividad-info-text-activar {
+        margin-top: 0px !important;
+        margin-bottom: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: start;
+    }
+
+    .actividad-txt-activar {
+        margin: 5px 0 0 0 !important;
+    }
+
+    .text-long-activar {
+        display: block;
+    }
+
+    .close-button {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(100, 100, 100, .4);
+        backdrop-filter: blur(5px);
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .close-button:hover {
+        background-color: rgba(200, 200, 200, .3);
+    }
+
+    .close {
+        width: 60px;
+        height: 60px;
+    }
+
+    .close:hover {
+        fill: white;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .no-activar {
+        display: none !important;
+    }
+
+    .activar {
+        display: flex !important;
+    }
+
+    body {
+        font-family: 'Inter';
+        margin: 0;
+        padding: 0;
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .header {
+        position: relative;
+        height: 77vh;
+        width: 100%;
+        background-image: url('imagenes/header.webp');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 90px;
+    }
+
+    .login-button {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        padding: 15px 25px;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .header h1 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 200px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        transition: 0.5s;
+    }
+
+    .header span {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200px;
+    }
+
+    .spotify-carta {
+        background: rgba(240, 240, 240, 0.5);
+        border-radius: 24px;
+        padding: 20px;
+        margin: 20px;
+        flex-grow: 1;
+        min-width: 300px;
+        width: auto;
+        max-width: 500px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    }
+
+    .playing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+    }
+
+    .playing p {
+        font-weight: 700;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .spotify-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .flecha-box {
+        width: 35px;
+        height: 35px;
+        background: #ddd;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flecha {
+        transform: translate(1px, 0);
+        width: 30px;
+        height: 30px;
+    }
+
+    .spotify-content {
+        display: flex;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .player-container,
+    .album-cover,
+    .play-button{
+        width: 150px;
+        height: 150px;
+    }
+
+    .song-details {
+        display: flex;
+        flex-direction: column;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .song-details .album {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: black;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .song-details .artist {
+        margin: 8px 0 0;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #333;
+        min-width: 130px;
+        width: 100%;
+        max-width: 330px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .actividades-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .actividad-carta {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(217, 217, 217);
+        border-radius: 30px;
+        overflow: hidden;
+        color: #333;
+        grid-column: span 2;
+        grid-row: span 5;
+    }
+
+    .actividad-img {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .tarjeta-1 {
+        background-image: url(imagenes/Tcg-1.webp);
+    }
+
+    .tarjeta-2-5 {
+        background-image: url(imagenes/Tcg-2-5.webp);
+    }
+
+    .tarjeta-3 {
+        background-image: url(imagenes/Tcg-3.webp);
+        background-position: 50%;
+    }
+
+    .tarjeta-4-6 {
+        background-image: url(imagenes/Tcg-4-6.webp);
+    }
+
+    .side-1 {
+        background-image: url(imagenes/side-1.webp);
+        height: 100% !important;
+    }
+
+    .side-2 {
+        background-image: url(imagenes/side-2.webp);
+        height: 100% !important;
+    }
+
+    .actividad-icon {
+        position: absolute;
+        font-size: 2rem;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(3px);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .actividad-icon img {
+        width: 50px !important;
+        height: auto !important;
+    }
+
+    .tennis {
+        transform: scale(.8);
+    }
+
+    .running {
+        transform: scale(.8);
+        transform: translate(0, -3px);
+    }
+
+    .actividad-tiempo {
+        background-color: yellow;
+        color: black;
+        padding: 5px 10px;
+        margin: 20px 20px 12px 20px;
+        width: fit-content;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.8vw;
+    }
+
+    .actividad-info-text {
+        padding: 0px 20px 20px 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .text-long {
+        display: none;
+    }
+
+    .actividad-txt {
+        color: #666;
+        font-size: 1.8vw;
+    }
+
+    .tarjeta {
+        max-height: 100%;
+    }
+
+    .wide-tarjeta {
+        grid-column: span 3;
+        grid-row: span 5;
+    }
+
+    .long-tarjeta {
+        grid-column: span 2;
+        grid-row: span 6;
+    }
+
+    .long-tarjeta img {
+        height: 100%;
+    }
+
+    .actividad-button {
+        display: none;
+    }
+
+    .start {
+        display: flex;
+        background-color: red;
+        margin: 20px auto;
+        margin-top: 50px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 100px;
+        width: fit-content;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .invite {
+        display: flex;
+        background-color: red;
+        margin: 20px auto;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 100px;
+        width: fit-content;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .actividades-grid-activar {
+        display: flex !important;
+    }
+
+    .actividad-carta-activar {
+        flex-direction: row-reverse !important;
+        min-height: fit-content;
+        height: calc(100dvh - 80px);
+    }
+
+    .actividad-img-activar {
+        width: 60% !important;
+        height: auto !important;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+
+    .actividad-info-activar {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-grow: 1 !important;
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+
+    .actividad-button-activar {
+        display: block !important;
+    }
+
+    .actividad-icon-activar {
+        position: inherit !important;
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .actividad-icon-activar img {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .actividad-info-text-activar {
+        margin-top: 0px !important;
+        margin-bottom: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: start;
+    }
+
+    .actividad-txt-activar {
+        margin: 5px 0 0 0 !important;
+    }
+
+    .text-long-activar {
+        display: block;
+    }
+
+    .close-button {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(100, 100, 100, .4);
+        backdrop-filter: blur(5px);
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .close-button:hover {
+        background-color: rgba(200, 200, 200, .3);
+    }
+
+    .close {
+        width: 60px;
+        height: 60px;
+    }
+
+    .close:hover {
+        fill: white;
+    }
+}
